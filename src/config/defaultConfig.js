@@ -8,8 +8,11 @@
  */
 
 const defaultConfig = {
+  js: {
+    core: 'src/Core/live2dcubismcore.js'   
+  },
   model: {
-    jsonPath: 'https://unpkg.com/live2d-widget-model-shizuku@latest/assets/shizuku.model.json',
+    jsonPath: './model/biaoqiang/biaoqiang.model3.json',
     scale: 1,
   },
   display: {
@@ -30,7 +33,7 @@ const defaultConfig = {
     div: 'live2d-widget',
   },
   react: {
-    opacity: 1,
+    opacity: 0.7,
   },
   dev: {
     border: false

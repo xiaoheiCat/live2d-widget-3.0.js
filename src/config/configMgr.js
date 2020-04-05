@@ -9,6 +9,7 @@
 
 import defaultConfig from './defaultConfig';
 import defaultsDeep from './defaultsDeep';
+import * as core from '../Core/live2dcubismcore'
 
 /**
  * The container of current configs
@@ -29,6 +30,8 @@ function configApplyer(userConfig){
   // console.log('Live2Dwidget: currConfig', currConfig);
 
 }
+
+console.log(core.default())
 
 export {
   configApplyer,

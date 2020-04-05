@@ -16,10 +16,10 @@ export function ModelSettingJson()
 {   // Define the index in the json file.
     this.NAME = "name";
     this.ID = "id";
-    this.MODEL = "model";
-    this.TEXTURES = "textures";
+    this.MODEL = "Moc";
+    this.TEXTURES = "Textures";
     this.HIT_AREAS = "hit_areas";
-    this.PHYSICS = "physics";
+    this.PHYSICS = "Physics";
     this.POSE = "pose";
     this.EXPRESSIONS = "expressions";
     this.MOTION_GROUPS = "motions";
@@ -61,10 +61,10 @@ ModelSettingJson.prototype.loadModelSetting = function(path, callback)
 */
 ModelSettingJson.prototype.getTextureFile = function(n)
 {
-    if (this.json[this.TEXTURES] == null || this.json[this.TEXTURES][n] == null)
+    if (this.json['FileReferences'][this.TEXTURES] == null || this.json['FileReferences'][this.TEXTURES][n] == null)
         return null;
 
-    return this.json[this.TEXTURES][n];
+    return this.json['FileReferences'][this.TEXTURES][n];
 }
 
 /**
@@ -76,7 +76,7 @@ ModelSettingJson.prototype.getTextureFile = function(n)
 */
 ModelSettingJson.prototype.getModelFile = function()
 {
-    return this.json[this.MODEL];
+    return this.json['FileReferences'][this.MODEL];
 };
 
 /**
@@ -88,9 +88,9 @@ ModelSettingJson.prototype.getModelFile = function()
 */
 ModelSettingJson.prototype.getTextureNum = function()
 {
-    if (this.json[this.TEXTURES] == null) return 0;
+    if (this.json['FileReferences'][this.TEXTURES] == null) return 0;
 
-    return this.json[this.TEXTURES].length;
+    return this.json['FileReferences'][this.TEXTURES].length;
 }
 
 /**
@@ -149,7 +149,7 @@ ModelSettingJson.prototype.getHitAreaName = function(n)
 */
 ModelSettingJson.prototype.getPhysicsFile = function()
 {
-    return this.json[this.PHYSICS];
+    return this.json['FileReferences'][this.PHYSICS];
 }
 
 /**

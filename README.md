@@ -1,3 +1,10 @@
+# live2d 3.0适配版
+适配3.0的模型，通过yarn link 或 npm link 即可使用
+
+**需要额外引入src/Core/live2dcubismcore.js到项目中**
+
+3.0代码来自[CubismWebSamples](https://github.com/Live2D/CubismWebSamples)
+
 [![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
 [![devdeps][devdeps]][devdeps-url]
