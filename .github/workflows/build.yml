@@ -37,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: L2Dwidget.3.0.js
-          path: dist/L2Dwidget.common.js
+          path: lib/L2Dwidget.common.js
