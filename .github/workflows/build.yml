@@ -36,5 +36,5 @@ jobs:
       - name: Upload the built minified JS file
         uses: actions/upload-artifact@v3
         with:
-          name: live2d-widget.min.js
-          path: dist/live2d-widget.min.js
+          name: L2Dwidget.min.js
+          path: dist/L2Dwidget.min.js
